@@ -1,0 +1,8 @@
+# Shopping_System Project 
+run ---> docker-compose up 
+and vist http://localhost:8000/
+run ---> docker-compose run shopping_system python manage.py migrate
+# project content 
+- models (user, profile, address , cart, cart_item , product, category, order, order_item) with test cases 
+# ERD for this project is 
+https://dbdiagram.io/d/63f65988296d97641d82fd83
