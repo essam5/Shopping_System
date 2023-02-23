@@ -1,0 +1,22 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: Bit68_Task
+      POSTGRES_PASS: postgres
+    volumes:
+      - pgdata:/var/lib/posgresql/data
+  shopping_system:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/shopping_system
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - db
+volumes:
+  pgdata:
