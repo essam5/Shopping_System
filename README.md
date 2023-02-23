@@ -1,8 +1,8 @@
 # Shopping_System Project 
-run ---> docker-compose up 
+- run ---> docker-compose up 
 and vist http://localhost:8000/
-run ---> docker-compose run shopping_system python manage.py migrate
-# black linter 
+- run ---> docker-compose run shopping_system python manage.py migrate
+- black linter 
 # project content 
 - Models (user, profile, address , cart, cart_item , product, category, order, order_item) with test cases 
 - PostgreSQL database
